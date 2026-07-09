@@ -5,21 +5,21 @@
 class Cowrite < Formula
   desc "Vim-flavored terminal markdown editor for co-writing with AI agents"
   homepage "https://github.com/henrypoydar/cowrite"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/henrypoydar/cowrite/releases/download/v0.2.2/cowrite_0.2.2_darwin_amd64.tar.gz"
-      sha256 "4fa0a798e56cb0bd8db95c5ede247036d9a4646512ce639374995fcdaf4a320a"
+      url "https://github.com/henrypoydar/cowrite/releases/download/v0.2.3/cowrite_0.2.3_darwin_amd64.tar.gz"
+      sha256 "f03ea0fd0981d75d209753de9e2b761f958e3856522cbf2b064cd6708aa53770"
 
       define_method(:install) do
         bin.install "cowrite"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/henrypoydar/cowrite/releases/download/v0.2.2/cowrite_0.2.2_darwin_arm64.tar.gz"
-      sha256 "c79a87f1d5758b2f1f793330d6d25f3c510b9f9fc19cbade565f120e8e548e3c"
+      url "https://github.com/henrypoydar/cowrite/releases/download/v0.2.3/cowrite_0.2.3_darwin_arm64.tar.gz"
+      sha256 "da06011320e68223a7011035d0c8ac393aad028acf8dddcf5a02358dbea5da28"
 
       define_method(:install) do
         bin.install "cowrite"
@@ -29,15 +29,15 @@ class Cowrite < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/henrypoydar/cowrite/releases/download/v0.2.2/cowrite_0.2.2_linux_amd64.tar.gz"
-      sha256 "73fe3f5b0a9ba47b5e91041a6bf4917b280384030f0afac57f893babb236b02d"
+      url "https://github.com/henrypoydar/cowrite/releases/download/v0.2.3/cowrite_0.2.3_linux_amd64.tar.gz"
+      sha256 "0053e1891c7afc66662e719c0f0444679d662f5de988a63e462f6359401bce2a"
       define_method(:install) do
         bin.install "cowrite"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/henrypoydar/cowrite/releases/download/v0.2.2/cowrite_0.2.2_linux_arm64.tar.gz"
-      sha256 "7a952cb8f5a277dac8087d5d100aa4a4406160d07730b7b4b079ac76d487b1cb"
+      url "https://github.com/henrypoydar/cowrite/releases/download/v0.2.3/cowrite_0.2.3_linux_arm64.tar.gz"
+      sha256 "cc8d31bdb562fd2e7e244eb70f05001bcbf03ce240de3f2dd9e25479850e6e34"
       define_method(:install) do
         bin.install "cowrite"
       end
